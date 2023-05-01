@@ -2,7 +2,15 @@ package DP_3장_데코레이터패턴_Basic;
 
 public class SomeCaffe {
 
+    /**
+     *
+     * @name 이준영
+     * @date 23.05.01
+     * @basic 단점 : 새로운 첨가물이 있을 때마다 새로운 클래스를 만들어야한다.
+     */
+
     public static void main(String[] args) {
+
         HouseBlend hb = new HouseBlend();
         Espresso esp = new Espresso();
 
