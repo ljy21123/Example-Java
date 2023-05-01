@@ -1,4 +1,4 @@
-package DP_3장_데코레이터패턴;
+package DP_3장_데코레이터패턴_Enhancement2;
 
 public class Milk extends CondimentDecorator {
 
