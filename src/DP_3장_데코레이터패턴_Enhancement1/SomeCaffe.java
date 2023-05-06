@@ -6,7 +6,7 @@ public class SomeCaffe {
      *
      * @name 이준영
      * @date 23.05.01
-     * @개선1 단점 : 첨가물 가격 변동시 Beverage 클래스 수정 필요 등
+     * 개선1 단점 : 첨가물 가격 변동시 Beverage 클래스 수정 필요 등
      */
 
     public static void main(String[] args) {
