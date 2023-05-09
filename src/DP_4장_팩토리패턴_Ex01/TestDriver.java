@@ -12,16 +12,16 @@ public class TestDriver {
         PizzaStore nyStore = new NYPizzaStore();
         PizzaStore chicagoStore = new ChicagoPizzaStore();
 
-        Pizza pizza = nyStore.orderPizza("cheese");
+        Pizza pizza = nyStore.orderPizza("Cheese");
         System.out.println("Ethan ordered a " + pizza.getName() + "\n");
 
-        pizza = chicagoStore.orderPizza("cheese");
+        pizza = chicagoStore.orderPizza("Cheese");
         System.out.println("Joel ordered a " + pizza.getName() + "\n");
 
-        pizza = nyStore.orderPizza("veggie");
+        pizza = nyStore.orderPizza("Veggie");
         System.out.println("Ethan ordered a " + pizza.getName() + "\n");
 
-        pizza = chicagoStore.orderPizza("veggie");
+        pizza = chicagoStore.orderPizza("Veggie");
         System.out.println("Joel ordered a " + pizza.getName() + "\n");
 
     }
