@@ -4,27 +4,23 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int input1 = 0;
-        int input2 = 0;
-        int one = 0;
-        int two = 0;
-        int three = 0;
-        int four = 0;
-
         Scanner sc = new Scanner(System.in);
 
-        input1 = sc.nextInt();
-        input2 = sc.nextInt();
+        int x = 0;
+        int y = 0;
 
-        one = (input1 * (input2 % 10));
-        two = (input1 * (input2 % 100));
-        three = (input1 * (input2 / 100));
-        four = one + two + three;
+        x = sc.nextInt();
+        y = sc.nextInt();
 
-        System.out.println(one);
-        System.out.println(two);
-        System.out.println(three);
-        System.out.println(four);
+        if (x > 0 && y > 0) {
+            System.out.println("1");
+        } else if (x < 0 && y > 0) {
+            System.out.println("2");
+        } else if (x < 0 && y < 0) {
+            System.out.println("3");
+        } else if (x > 0 && y < 0) {
+            System.out.println("4");
+        }
 
         sc.close();
     }
