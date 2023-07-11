@@ -1,27 +1,33 @@
+import java.io.*;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         Scanner sc = new Scanner(System.in);
 
-        int x = 0;
-        int y = 0;
+        int N = sc.nextInt();
+        int M = sc.nextInt();
 
-        x = sc.nextInt();
-        y = sc.nextInt();
+        int basket[] = new int[N];
 
-        if (x > 0 && y > 0) {
-            System.out.println("1");
-        } else if (x < 0 && y > 0) {
-            System.out.println("2");
-        } else if (x < 0 && y < 0) {
-            System.out.println("3");
-        } else if (x > 0 && y < 0) {
-            System.out.println("4");
+        for (int i = 0; i < M; i++) {
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+            int c = sc.nextInt();
+
+            for (; a <= b; a++) {
+                basket[a-1] = c;
+            }
+        }
+
+        for (int i = 0; i < basket.length; i++) {
+            System.out.print(basket[i] + " ");
         }
 
         sc.close();
+
     }
 }
